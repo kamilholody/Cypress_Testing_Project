@@ -7,6 +7,14 @@ describe('Browser Actions', () => {
         cy.url().should('include', 'example.com')
     })
 
+    it('should wait for 3 seconds', () => {
+        cy.wait(3000)
+    })
+
+    it('should pasue the execution', () => {
+        cy.pause()
+    })
+
     it('should check for correct element on the page', () => {
         cy.get('h1').should('be.visible')
     })
