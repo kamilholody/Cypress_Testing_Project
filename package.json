@@ -1,0 +1,28 @@
+{
+  "name": "cypress_testing_project",
+  "version": "1.0.0",
+  "description": "Automated software testing with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kamilholody/Cypress_Testing_Project.git"
+  },
+  "keywords": [
+    "testing",
+    "cypress",
+    "automation"
+  ],
+  "author": "Kamil Hołody",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamilholody/Cypress_Testing_Project/issues"
+  },
+  "homepage": "https://github.com/kamilholody/Cypress_Testing_Project#readme",
+  "dependencies": {
+    "cypress": "^9.7.0",
+    "prettier": "^3.0.0"
+  }
+}
