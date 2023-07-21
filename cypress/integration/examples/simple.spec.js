@@ -8,4 +8,8 @@ describe('Browser Actions', () => {
         cy.get('a').contains('Travel').click()
         cy.get('h1').contains('Travel')
     })
+
+    it('should display correct number of books', () => {
+        cy.get('.product_pod').its('length').should('eq', 11)
+    })
 })
