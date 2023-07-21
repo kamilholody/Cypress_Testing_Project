@@ -14,6 +14,11 @@ describe('Working with inputs', () => {
         cy.get('#user_password').type('Some invalid password', { delay: 50})
     })
 
+    it('should mark checkbox', () => {
+        cy.get('input[type="checkbox"]').click()
+        cy.wait(5000)
+    })
+
     it('should submit login form', () => {
         cy.contains('Sign in').click()
     })
