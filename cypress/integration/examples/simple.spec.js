@@ -2,6 +2,7 @@ describe('Browser Actions', () => {
     it('should load books website', () => {
         cy.visit('https://books.toscrape.com/index.html', { timeout: 10000})
         cy.url().should('include', 'index.html')
+        cy.log('Website Loaded!')
     })
     
     it('should click on Travel category', () => {
