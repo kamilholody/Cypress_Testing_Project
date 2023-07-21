@@ -26,6 +26,8 @@ describe('Working with inputs', () => {
     })
 
     it('should display error message', () => {
-        cy.get('.alert-error').should('be.visible')
+        cy.get('.alert-error')
+            .should('be.visible')
+            .and('contain', 'Login and/or password are wrong.')
     })
 })
