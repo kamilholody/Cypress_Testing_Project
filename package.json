@@ -24,6 +24,7 @@
   "homepage": "https://github.com/kamilholody/Cypress_Testing_Project#readme",
   "dependencies": {
     "cypress": "^9.7.0",
+    "cypress-xpath": "^2.0.1",
     "prettier": "^3.0.0"
   }
 }
