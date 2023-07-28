@@ -5,11 +5,7 @@ describe('New Payee Test', () => {
         cy.fixture('userE2E').then(user => {
             const username = user.id
             const password = user.pwd
-
-            cy.get('#login_form').should('be.visible')
-            cy.get('#user_login').clear().type(username)
-            cy.get('#user_password').clear().type(password)
-            cy.contains('Sign in').click()
+            cy.loginE2E(username, password)
         })
     })
 

@@ -6,10 +6,7 @@ describe('Login / Logout Test', () => {
     })
 
     it('should try to login with invalid data', () => {
-        cy.get('#login_form').should('be.visible')
-        cy.get('#user_login').clear().type('invalid username')
-        cy.get('#user_password').clear().type('invalid passwoard')
-        cy.contains('Sign in').click()
+        cy.loginE2E("invalid username", "invalid password")
     })
 
     it('should display error message', () => {
@@ -22,11 +19,7 @@ describe('Login / Logout Test', () => {
         cy.fixture('userE2E').then(user => {
             const username = user.id
             const password = user.pwd
-
-            cy.get('#user_login').clear().type(username)
-            cy.get('#user_password').clear().type(password)
-            cy.get('#user_remember_me').check()
-            cy.contains('Sign in').click()
+            cy.loginE2E(username, password)
         })
         cy.get('ul.nav-tabs').should('be.visible')
     })
